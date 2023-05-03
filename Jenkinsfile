@@ -5,7 +5,7 @@ node(){
         
     stage('Install dependencies') {
         nodejs('nodejs') {
-            sh 'npm install'
+            sh 'npm install --force'
             echo "Modules installed"
         }
         
